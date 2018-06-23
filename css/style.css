@@ -45,19 +45,55 @@ body{
 	background-repeat: repeat;
 }
 
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
 
 /*Header*/
+.main-header{
+	margin-bottom: 75px;
+}
 .main-navigation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;
+}
+.main-navigation-wrapper{
+	width: 100%;
+	margin-bottom: 60px;
 	
 	background-color: #000000;
 }
-
+.main-navigation-wrapper .container{
+	display: flex;
+	justify-content: space-between;
+}
+.main-header-logo{
+	order: 2;
+	width: 368px;
+	height: 153px;
+}
 .site-navigation,
 .user-navigation{
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+.site-navigation{
+	width: 620px;
+	margin: 0;
+	padding: 0;
+}
+.user-navigation{
+	width: 140px;
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation a,
@@ -75,6 +111,12 @@ body{
 
 /*Index-columns*/
 .index-columns{
+	display: flex;
+	justify-content: space-between;
+	
+	padding: 50px 80px;
+	margin-bottom: 35px;
+	
 	color: #000000;
 	
 	background-color: #f8f5f2;
@@ -89,10 +131,19 @@ body{
 
 
 /*Features*/
+.features{
+	margin-bottom: 80px;
+}
 .features-list{
+	display: flex;
+	justify-content: space-between;
+	
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 .features-item{
+	width: 300px;
 	text-align: center;
 }
 .features-item h3{
@@ -102,19 +153,33 @@ body{
 
 
 /*News*/
+.news{
+	width: 380px;
+}
 .news-list{
 	list-style: none;
 }
 .news-item time{
 	text-transform: none;
 }
-.gallety-content{
+
+.gallery{
+	width: 300px;
+}
+.gallery-content{
 	background-color: #cccccc;
 	border: 7px solid #ffffff;
 }
 
 
 /*Appointment*/
+.contacts{
+	width: 380px;
+}
+
+.appointment{
+	width: 300px;
+}
 .appointment-item input{
 	font: inherit;
 	
@@ -205,6 +270,12 @@ body{
 
 
 /*Catalog-item*/
+.product-photos{
+	width: 460px;
+}
+.product-info{
+	width: 390px;
+}
 .product-photo-preview{
 	list-style: none;
 }
@@ -261,12 +332,22 @@ body{
 
 /*Footer*/
 .main-footer{
+	margin-top: 65px;
+	padding: 60px 0;
 	color: #ffffff;
 	
 	background-color: #212121;
 	background-image: url(../img/footer-pattern.png);
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+.main-footer .container{
+	display: flex;
+}
+.footer-contacts{
+	width: 320px;
+	margin: 0;
+	margin-right: 80px;
 }
 .footer-contacts a{
 	color: #ffffff;
@@ -277,6 +358,7 @@ body{
 	text-decoration: none;
 }
 .footer-social{
+	width: 145px;
 	text-align: center;
 }
 .footer-social ul{
@@ -286,6 +368,9 @@ body{
 	color: #ffffff;
 }
 .footer-copyright{
+	width: 150px;
+	margin: 0;
+	margin-left: auto;
 	text-align: center;
 }
 .footer-copyright .button:hover,
