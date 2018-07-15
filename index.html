@@ -105,6 +105,7 @@
     </section>
   </div>
 </main>
+
 <footer class="main-footer">
   <div class="container">
     <p class="footer-contacts">
@@ -139,19 +140,20 @@
     <p class="footer-copyright"> <b>Разработано</b> <a class="button" href="https://htmlacademy.ru">HTML academy</a> </p>
   </div>
 </footer>
+
 <section class="modal modal-login">
   <h2>Личный кабинет</h2>
-  <p>Введите свой логин и пароль</p>
+  <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label class="visually-hidden" for="user-login">Логин</label>
-      <input  class="login-icon-user" id="user-login" type="text" name="login" value="" placeholder="Логин">
+      <input class="login-icon-user" id="user-login" type="text" name="login" value="" placeholder="Логин">
     </p>
     <p>
       <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class="login-icon-password"  id="user-password" type="password" name="password" value="" placeholder="Пароль">
+      <input class="login-icon-password" id="user-password" type="password" name="password" value="" placeholder="Пароль">
     </p>
-    <p class="login-password-info">
+    <p class="login-help">
       <label class="login-checkbox">
         <input  class="visually-hidden" type="checkbox" name="remember">
         <span class="checkbox-indicator"></span> Запомните меня </label>
@@ -162,10 +164,12 @@
   </form>
   <button class="modal-close" type="button">Закрыть</button>
 </section>
+
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <p> <img src="img/map1.jpg" width="766" height="560" alt="Адрес компании по адресу ул. Большая Конюшенная, Д. 19/8, Санкт-Петербург"> </p>
+  <p> <img src="img/map1.jpg" width="780" height="560" alt="Адрес компании по адресу ул. Большая Конюшенная, Д. 19/8, Санкт-Петербург"> </p>
   <button class="modal-close" type="button">Закрыть</button>
 </section>
+<div class="modal-overlay"></div>
 </body>
 </html>
