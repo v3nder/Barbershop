@@ -143,6 +143,24 @@ body{
 .user-navigation a:focus{
 	background-color: #242424;
 }
+.site-navigation-current{
+	position: relative;
+}
+.site-navigation-current a:not([href]){
+	background-color: #000000;
+}
+.site-navigation-current::after{
+	content: "";
+	
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+
+	height: 5px;
+	background-color: #ffffff;
+}
+
 .user-navigation .login-link{
 	position: relative;
 	padding-left: 50px;
@@ -755,7 +773,55 @@ body{
 	margin-top: 45px;
 }
 
-/*Footer*/
+/* Pricing page */
+.inner-content{
+	margin-bottom: 75px;
+}
+.inner-content h2{
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	font-size: 24px;
+	line-height: 30px;
+}
+.inner-content h3{
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	font-size: 20px;
+	line-height: 24px;
+}
+.inner-content h2 + h3{
+	margin-top: 30px;
+}
+.inner-content p{
+	margin: 14px 0;
+}
+
+.inner-content td{
+	padding: 10px 15px;
+	border: 2px solid #000000;
+}
+.inner-content table{
+	border-collapse: collapse;
+}
+.inner-content .big-heading{
+	display: flex;
+	align-items: center;
+
+	margin-top: 55px;
+	margin-bottom: 65px;
+
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+
+	outline: 2px dotted blue;
+}
+
+
+
+/* Footer */
 .main-footer{
 	margin-top: 65px;
 	padding: 60px 0;
